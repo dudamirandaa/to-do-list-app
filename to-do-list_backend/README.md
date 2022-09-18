@@ -31,6 +31,10 @@ Unit tests validate the below characteristics:
   - Delete task;
   - Return 404 error if trying to delete a nonexistent item.
 
+### Set up
+
+This application is configured to store data in a postgres database. Therefore, to start this application, please first create a postgres database called to-do-list-app.
+
 ---
 
 ### Images
