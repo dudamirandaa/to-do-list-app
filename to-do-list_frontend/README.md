@@ -1,6 +1,6 @@
 # To-do list app - Angular
 
-This project was based on my studies with the **Angular** courses from Alura. The application was crafted using concepts I learned including http request, API integrations, @Input and @Output annotations and event bindings.
+This project was developed as a result of my studies on **Angular** courses from Alura. The application was crafted using concepts I learned including http request, API integrations, @Input and @Output annotations and event bindings.
 
 In combination with the Rest API built for this app, you can use this interface to:
 
