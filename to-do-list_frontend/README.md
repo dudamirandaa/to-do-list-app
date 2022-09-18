@@ -16,7 +16,7 @@ To start this application, please run the `npm run start` command.
 
 ---
 
-### Imagens
+### Images
 
 Home page:
 
