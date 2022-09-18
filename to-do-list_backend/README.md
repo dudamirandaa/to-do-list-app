@@ -1,6 +1,5 @@
 # To-do list app - REST API
 
----
 Este projeto foi desenvolvido durante o curso de **Spring Boot API REST** da Alura. A aplicação cria uma tabela no banco de dados referente a uma lista de tarefas.
 
 A aplicação foi feita utilizando conceitos de JpaRepository, Data Transfer Object, Injeção de dependência, JpaSpecificationExecutor, ResponseEntity, Liquibase, testes unitários com JUnit, entre outros.
