@@ -1,0 +1,11 @@
+<div>
+  <h2 class="d-flex justify-content-center mt-5 mb-3 pl-0">duda's to do list</h2>
+
+  <app-nav (newTaskPressed)="newTaskPressed()" (filterPressed)="filterPressed()"></app-nav>
+
+  <app-add-card [isNewTaskPressedEvent]="isNewTaskPressed"></app-add-card>
+  <app-filter-card [isFilterPressedEvent]="isFilterPressed" (filterEvent)="filterTasksPressed($event)"></app-filter-card>
+  <app-edit-card [isEditTaskPressedEvent]="isEditTaskPressed" [task]="task"></app-edit-card>
+
+  <app-list (editTaskPressed)="editTaskPressed($event)" [filteredList]="list"></app-list>
+</div>

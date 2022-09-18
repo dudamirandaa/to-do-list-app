@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+  background-color: #232830;
+  margin: 0;
+  color: #A9B7C6;
+}
+
+body{
+  background-color: #232830 !important;
+
+}
+
+a{
+  background-color: #2B303B !important;
+
+  &:hover{
+    color: #dbdddf !important;
+  }
+}
+
+.bg-dark{
+  background-color: #2B303B !important;
+}
+
+// #add-card{
+//   display: none !important;
+// }
+
+form{
+  background-color: #2B303B !important;
+}
+
+.form-control:focus.warning{
+  border-color: #EBCB8B !important;
+  box-shadow: 0 0 0 0.25rem #ebcb8b7c !important;
+}
+
+.form-control:focus.light{
+  border-color: #A9B7C6 !important;
+  box-shadow: 0 0 0 0.25rem #a9b7c685 !important;
+}
+
+.datepicker {
+  background-color: #fff ;
+  color: #333 ;
+  }
+
+.table-dark{
+  --bs-table-bg: #232830 !important;
+  --bs-table-striped-bg: #2B303B !important;
+  --bs-table-striped-color: #dbdddf !important;
+  --bs-table-hover-bg: #383c4a !important;
+  --bs-table-hover-color: #dbdddf !important;
+}
+
+.btn{
+  --bs-btn-color: #232830 !important;
+  --bs-btn-hover-color: #232830 !important;
+}
+
+.form-check-input:checked{
+  background-color: #A3BE8C !important;
+  border-color: #A3BE8C !important;
+  ::shadow{
+    background-color: #b5cba3 !important;
+  }
+}
+
+.form-check-input:focus{
+  border-color: #b5cba3 !important;
+  box-shadow: 0 0 0 0.25rem #acc59888 !important;
+}
+
+$theme-colors: (
+  "primary":    #A3BE8C,
+  "secondary":  #65737E,
+  "success":    #305D78,
+  "info":       #B48EAD,
+  "warning":    #EBCB8B,
+  "danger":     #BF616A,
+  "light":      #A9B7C6,
+  "dark":       #2B303B,
+  "gray":       #65737E,
+  "gray-dark":  #2B303B
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";

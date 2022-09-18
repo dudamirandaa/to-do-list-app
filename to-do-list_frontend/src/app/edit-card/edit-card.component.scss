@@ -1,0 +1,14 @@
+.editCardDefault {
+  display: none;
+}
+
+.editCardPressed {
+  display: flex;
+}
+
+#close {
+  background: rgb(42 48 58 / 0%);
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
