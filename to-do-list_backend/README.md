@@ -1,65 +1,64 @@
 # To-do list app - REST API
 
-Este projeto foi desenvolvido durante o curso de **Spring Boot API REST** da Alura. A aplicação cria uma tabela no banco de dados referente a uma lista de tarefas.
+This project was developed during the **Spring Boot API REST** course from Alura. The application creates a list of tasks as a table in a database.
 
-A aplicação foi feita utilizando conceitos de JpaRepository, Data Transfer Object, Injeção de dependência, JpaSpecificationExecutor, ResponseEntity, Liquibase, testes unitários com JUnit, entre outros.
+This app was made using concepts of JpaRepository, Data Transfer Object, Dependency Injection, JpaSpecificationExecutor, ResponseEntity, Liquibase, JUnit unity tests, among others.
 
-Você pode utilizar o postman para realizar as seguintes ações:
+You can use Postman to execute the below:
 
-- Listar todas as tarefas
-- Filtrar tarefas por nome, prioridade ou data
-- Inserir nova tarefa
-- Alterar nome, prioridade ou data de uma tarefa
-- Deletar uma tarefa
+- List all tasks;
+- Filter tasks by name, priority or date;
+- Insert new task;
+- Edit task's name, priority or date;
+- Delete task.
 
-A aplicação retorna um erro 404 caso ocorra tentativa de alterar ou deletar um item inexistente.
+Thee application returns the 404 error in the case of trying to alter or delete a nonexistent item. 
 
-Os testes unitários validam as seguintes características:
+Unit tests validate the below characteristics:
 
 - Get:
-  - Listagem de todas as tarefas;
-  - Listagem de todas as tarefas com filtros por nome, prioridade, data ou conbinações entre os três;
-  - Listagem de todas as tarefas caso a prioridade seja setada para "ALL".
+  - List all tasks;
+  - List all tasks filtering by name, priority, date, or combinations between the three.
 - Post:
-  - Inclusão de nova tarefa;
-  - Não inclusão de nova tarefa caso fornecida prioridade ou data inválida;
-  - Não inclusão de nova tarefa caso não fornecidos nome, prioridade ou data.
+  - Add new task;
+  - Not add new task if the priority input is invalid;
+  - Not add new task if name, priotity or date are not input.
 - Put:
-  - Edição de uma tarefa;
-  - Retorno de erro 404 em caso de tentativa de editar tarefa não existente;
-  - Não editar tarefa caso não sejam fornecidos nome, prioridade ou data.
+  - Edit task;
+  - Not edit task if name, priotity or date are not input;
+  - Return 404 error if trying to alter a nonexistent item.
 - Delete:
-  - Deleção de tarefa;
-  - Retorno de erro 404 em caso de tentativa de deletar tarefa não existente.
+  - Delete task;
+  - Return 404 error if trying to delete a nonexistent item.
 
 ---
 
-### Imagens
+### Images
 
 Tests passsed:
 
 ![Tests](images/tests-passed.png)
 
-Listagem de tarefas:
+List all tasks:
 
 ![List](images/list.png)
 
-Listagem de tarefas com filtro por prioridade:
+List tasks filtering by priority:
 
 ![List by priority](images/filtered-list.png)
 
-Inserção de nova tarefa:
+Insert new task:
 
 ![Insert](images/insert.png)
 
-Alteração da prioridade de uma tarefa:
+Edit task's priority:
 
 ![Edit](images/edit.png)
 
-Deleção de uma tarefa:
+Delete task:
 
 ![Delete](images/delete.png)
 
-Erro 404 ao tentar deletar uma tarefa não existente:
+404 error when trying to delete a nonexistent item:
 
 ![Error 404](images/error-404.png)
