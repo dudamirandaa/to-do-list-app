@@ -1,7 +1,6 @@
 package dudapro.todolist.resource;
 
 import org.junit.Test;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -13,9 +12,7 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import java.io.UnsupportedEncodingException;
 import java.net.URI;
-import java.net.URISyntaxException;
 
 import static org.junit.Assert.fail;
 
@@ -463,7 +460,7 @@ public class TaskResourceIT {
                         .status().is(404));
     }
 
-    public void deleteCreatedTask(MvcResult result) throws Exception {
+    private void deleteCreatedTask(MvcResult result) throws Exception {
         String content = result.getResponse().getContentAsString();
         URI uri = new URI("/to-do-list/" + content);
         String json = "";

@@ -6,7 +6,6 @@ import dudapro.todolist.repository.TaskRepository;
 import dudapro.todolist.resource.dto.EditTaskDto;
 import dudapro.todolist.resource.dto.NewTaskDto;
 import dudapro.todolist.specification.TaskSpecification;
-import net.bytebuddy.asm.Advice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.ResponseEntity;
@@ -34,9 +33,9 @@ public class TaskService {
         if (name == null && priority == null && dueDate == null) {
             return taskRepository.findAll();
         } else return taskRepository.findAll(Specification.where(
-                TaskSpecification.name(name))
-                .or(TaskSpecification.priority(priority))
-                .or(TaskSpecification.dueDate(dueDate))
+            TaskSpecification.name(name))
+            .or(TaskSpecification.priority(priority))
+            .or(TaskSpecification.dueDate(dueDate))
         );
     }
 

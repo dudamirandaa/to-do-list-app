@@ -1,9 +1,9 @@
 package dudapro.todolist.resource;
 
 import dudapro.todolist.model.Task;
-import dudapro.todolist.service.TaskService;
-import dudapro.todolist.resource.dto.NewTaskDto;
 import dudapro.todolist.resource.dto.EditTaskDto;
+import dudapro.todolist.resource.dto.NewTaskDto;
+import dudapro.todolist.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,7 +21,6 @@ public class TaskResource {
 
     @GetMapping
     public List<Task> listTasks(String name, String priority, String date){
-        System.out.println(name);
         return taskService.listTasks(name, priority, date);
     }
 
